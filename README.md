@@ -33,6 +33,7 @@ Publish the website in the given URL.
 
 # PROGRAM :
 ## app.component.html
+~~~
 
 <body>
     <div class="container">
@@ -49,7 +50,9 @@ Publish the website in the given URL.
         </div>
     </div>
 </body>
+~~~
 ## rectangle.component.html:
+~~~
 <div>
     <h2>Area of a Rectangle</h2>
     Length = <input  type="text" [(ngModel)]="length"> Meters<br>
@@ -57,7 +60,9 @@ Publish the website in the given URL.
     <input type="button" (click)="onCalculate()" value="calculate"><br>
     Area=<input [value]="area" type="text" >Meter<sup>2</sup>
 </div>
+~~~
 ## cylinder.component.html:
+~~~
 <div>
     <h2>Area of a Cylinder</h2>
     Radius = <input  type="text" [(ngModel)]="radius"> Meters<br>
@@ -65,7 +70,9 @@ Publish the website in the given URL.
     <input type="button" (click)="onCycCalculate()" value="calculate"><br>
     Area=<input [value]="area" type="text" >Meter<sup>2</sup>
 </div>
+~~~
 ## ##app.comopnent.ts:
+~~~
 import { Component } from '@angular/core';
 
 @Component({
@@ -76,7 +83,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'mathcalculations';
 }
+~~~
 ## rectangle.component.ts:
+~~~
 import { Component } from "@angular/core";
 
 @Component({ selector:'Rectangle-Area', templateUrl:'./rectangle.component.html'
@@ -88,8 +97,9 @@ onCalculate(){
     this.area = this.length*this.breadth;
 }
 }
-
+~~~
 ## cylinder.component.ts:
+~~~
 import { Component } from "@angular/core";
 import { RadioControlValueAccessor } from "@angular/forms";
 
@@ -113,7 +123,9 @@ export class CylinderComponent{
         this.area = this.area = 3.14*this.radius*this.radius*this.height
     }
 }
+~~~
 ## app.component.css:
+~~~
 .container{
     background-color: sky blue;
     text-align: center;
@@ -153,6 +165,7 @@ import { RectangleComponent } from './rectangle/rectangle.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+~~~
 
 ## OUTPUT:
 
