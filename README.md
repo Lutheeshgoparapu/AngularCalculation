@@ -168,8 +168,10 @@ export class AppModule { }
 ~~~
 
 ## OUTPUT:
+![output](https://github.com/Lutheeshgoparapu/AngularCalculation/blob/main/ang.jpeg?raw=true)
 
-### Home Page:
+
 
 
 ## Result:
+This is code is executed successfully to create a webpage to make mathematical calculations using angular
